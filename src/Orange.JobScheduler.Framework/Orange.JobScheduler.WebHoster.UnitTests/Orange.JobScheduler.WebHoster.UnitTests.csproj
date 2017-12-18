@@ -73,9 +73,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Orange.JobScheduler.WebHoster\Orange.JobScheduler.WebHoster.csproj">
-      <Project>{FBC76FE9-5E07-4EA9-8D30-BE0D2BB0A204}</Project>
-      <Name>Orange.JobScheduler.WebHoster</Name>
+    <ProjectReference Include="..\Orange.JobScheduler.Framework.WebHoster\Orange.JobScheduler.Framework.WebHoster.csproj">
+      <Project>{a6108213-87c9-4ee6-99df-fc2bae93191d}</Project>
+      <Name>Orange.JobScheduler.Framework.WebHoster</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

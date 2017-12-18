@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0A39045A-603C-4A89-B014-51ABFE649D43}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Orange.JobScheduler.WebHoster.Example</RootNamespace>
-    <AssemblyName>Orange.JobScheduler.WebHoster.Example</AssemblyName>
+    <ProjectGuid>{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orange.JobScheduler.Framework.Common</RootNamespace>
+    <AssemblyName>Orange.JobScheduler.Framework.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.3.1.0\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,19 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handler\TaskHandler.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Enums\HeartBeatStatus.cs" />
+    <Compile Include="Enums\JobEventType.cs" />
+    <Compile Include="Events\JobEvent.cs" />
+    <Compile Include="JobContext.cs" />
+    <Compile Include="JobTrigger.cs" />
+    <Compile Include="Notifier\IJobEventWatcher.cs" />
+    <Compile Include="Notifier\JobEventNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Orange.JobScheduler.Framework.WebHoster\Orange.JobScheduler.Framework.WebHoster.csproj">
-      <Project>{a6108213-87c9-4ee6-99df-fc2bae93191d}</Project>
-      <Name>Orange.JobScheduler.Framework.WebHoster</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

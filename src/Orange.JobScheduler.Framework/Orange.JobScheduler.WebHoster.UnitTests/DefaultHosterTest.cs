@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
@@ -6,7 +6,8 @@ using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using NSubstitute;
-using Orange.JobScheduler.WebHoster.OwinApplication;
+using Orange.JobScheduler.Framework.WebHoster;
+using Orange.JobScheduler.Framework.WebHoster.OwinApplication;
 
 namespace Orange.JobScheduler.WebHoster.UnitTests
 {
@@ -16,7 +17,7 @@ namespace Orange.JobScheduler.WebHoster.UnitTests
         private int port = 9000;
         private IRequestHandler taskHandler;
 
-        private Hoster webHoster;
+        private Framework.WebHoster.Hoster webHoster;
 
         [TestCleanup]
         public void TestCleanup()
@@ -32,7 +33,7 @@ namespace Orange.JobScheduler.WebHoster.UnitTests
         [TestMethod]
         public void TestTask()
         {
-            webHoster = new Hoster(port, new Dictionary<string, IRequestHandler>() {{"task", taskHandler}});
+            webHoster = new Framework.WebHoster.Hoster(port, new Dictionary<string, IRequestHandler>() {{"task", taskHandler } });
             Thread t = new Thread(webHoster.Start);
             t.Start();
         }

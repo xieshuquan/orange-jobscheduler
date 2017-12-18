@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orange.JobScheduler.Job.JobCenter", "Orange.JobScheduler.Job.JobCenter\Orange.JobScheduler.Job.JobCenter.csproj", "{6C34003C-C4E0-49F0-A666-D27C3E2DA42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orange.JobScheduler.Framework.WebHoster", "..\Orange.JobScheduler.Framework\Orange.JobScheduler.Framework.WebHoster\Orange.JobScheduler.Framework.WebHoster.csproj", "{A6108213-87C9-4EE6-99DF-FC2BAE93191D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orange.JobScheduler.Framework.Common", "..\Orange.JobScheduler.Framework\Orange.JobScheduler.Framework.Common\Orange.JobScheduler.Framework.Common.csproj", "{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C34003C-C4E0-49F0-A666-D27C3E2DA42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C34003C-C4E0-49F0-A666-D27C3E2DA42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C34003C-C4E0-49F0-A666-D27C3E2DA42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C34003C-C4E0-49F0-A666-D27C3E2DA42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6108213-87C9-4EE6-99DF-FC2BAE93191D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6108213-87C9-4EE6-99DF-FC2BAE93191D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6108213-87C9-4EE6-99DF-FC2BAE93191D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6108213-87C9-4EE6-99DF-FC2BAE93191D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E4C9BD-DF29-4980-A241-B2CB99D3EB39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69F98892-7C13-46F0-8188-332000DF343F}
+	EndGlobalSection
+EndGlobal

@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common.Logging;
 using Microsoft.Owin.Hosting;
-using Orange.JobScheduler.WebHoster.OwinApplication;
+using Orange.JobScheduler.Framework.WebHoster.OwinApplication;
 using Owin;
 
-namespace Orange.JobScheduler.WebHoster
+namespace Orange.JobScheduler.Framework.WebHoster
 {
     public class Hoster
     {

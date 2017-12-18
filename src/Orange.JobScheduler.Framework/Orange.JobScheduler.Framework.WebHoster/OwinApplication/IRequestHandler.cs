@@ -1,4 +1,4 @@
-﻿namespace Orange.JobScheduler.WebHoster.OwinApplication
+namespace Orange.JobScheduler.Framework.WebHoster.OwinApplication
 {
     public interface IRequestHandler
     {

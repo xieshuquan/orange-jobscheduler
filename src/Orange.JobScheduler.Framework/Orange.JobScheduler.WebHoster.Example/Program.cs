@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Orange.JobScheduler.WebHoster.Example.Handler;
-using Orange.JobScheduler.WebHoster.OwinApplication;
+using Orange.JobScheduler.Framework.WebHoster.OwinApplication;
+using Orange.JobScheduler.Framework.WebHoster;
 
 namespace Orange.JobScheduler.WebHoster.Example
 {

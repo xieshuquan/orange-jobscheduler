@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using Common.Logging;
 using Microsoft.Owin;
 using Newtonsoft.Json;
 
-namespace Orange.JobScheduler.WebHoster.OwinApplication
+namespace Orange.JobScheduler.Framework.WebHoster.OwinApplication
 {
     public class DefaultMiddleware : OwinMiddleware
     {
